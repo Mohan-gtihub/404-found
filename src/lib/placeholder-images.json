@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract network of nodes and connections on a dark blue background.",
+      "imageUrl": "https://picsum.photos/seed/future1/1920/1080",
+      "imageHint": "abstract network"
+    },
+    {
+      "id": "web-development-service",
+      "description": "A modern laptop displaying lines of code with a clean, minimalist setup.",
+      "imageUrl": "https://picsum.photos/seed/coding2/600/400",
+      "imageHint": "laptop code"
+    },
+    {
+      "id": "iot-service",
+      "description": "A smart home dashboard on a tablet, controlling lights, temperature, and security.",
+      "imageUrl": "https://picsum.photos/seed/smarthome3/600/400",
+      "imageHint": "smart home"
+    },
+    {
+      "id": "project-ecommerce",
+      "description": "A stylish online store for fashion, displayed on a laptop screen.",
+      "imageUrl": "https://picsum.photos/seed/store4/600/400",
+      "imageHint": "ecommerce website"
+    },
+    {
+      "id": "project-smarthome",
+      "description": "A person using a smartphone to adjust smart home settings.",
+      "imageUrl": "https://picsum.photos/seed/iot-dash5/600/400",
+      "imageHint": "iot dashboard"
+    },
+    {
+      "id": "project-dashboard",
+      "description": "A complex data analytics dashboard with charts and graphs.",
+      "imageUrl": "https://picsum.photos/seed/dataviz6/600/400",
+      "imageHint": "analytics dashboard"
+    }
+  ]
+}
