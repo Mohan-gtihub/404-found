@@ -77,7 +77,7 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item) => (
             <Card key={item.website} className="group flex flex-col justify-between overflow-hidden transition-all duration-300 bg-secondary border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
-              <Link href="#">
+              <Link href={item.url} target="_blank" rel="noopener noreferrer" className="flex-grow p-6">
                 <CardHeader>
                   <div className='flex justify-between items-start'>
                     <CardTitle className="font-sans text-2xl font-bold text-foreground transition-colors group-hover:text-primary">
