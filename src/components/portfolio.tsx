@@ -6,54 +6,58 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/c
 
 const portfolioItems = [
   {
-    website: 'Blackvision.in',
-    category: 'Corporate website',
-    description: 'Modern corporate website UI/UX',
-  },
-  {
     website: 'KapdaTailor.com',
     category: 'Fashion Ecommerce',
     description: 'Tailor fashion ecommerce platform',
+    url: 'https://kapdatailor.com',
   },
   {
     website: 'IndySutra.com',
     category: 'Ethnic Fashion Store',
     description: 'Interactive ethnic fashion store',
+    url: 'https://indysutra.com',
   },
   {
     website: 'PowerSutra.com',
     category: 'Women Fashion Brand',
     description: 'Trendy women fashion ecommerce',
+    url: 'https://powersutra.com',
   },
   {
     website: 'LitlMeU.com',
     category: 'Baby Fashion Ecommerce',
     description: 'Cute, responsive ecommerce site',
+    url: 'https://litlmeu.com',
   },
   {
     website: 'UDDStudio.com',
     category: 'Fashion Studio Portfolio',
     description: 'Portfolio website for fashion studio',
+    url: 'https://uddstudio.com',
   },
   {
     website: 'Intoobox.com',
     category: 'Ecommerce + Attribute Logic',
     description: 'Advanced product selection logic',
+    url: 'https://intoobox.com',
   },
   {
     website: 'ReyaRosette.in',
     category: 'Fashion / Shoe Ecommerce',
     description: 'High-end ecommerce experience',
+    url: 'https://reyarosette.in',
   },
   {
     website: 'Glokal by Zingo',
     category: 'Hospitality Corporate',
     description: 'Hospitality corporate website',
+    url: 'https://glokalbyzingo.com', 
   },
   {
     website: 'Hydroprenuers',
     category: 'Custom Website',
     description: 'Tailored website with unique design',
+    url: 'https://hydroprenuers.com',
   },
 ];
 
@@ -86,7 +90,7 @@ export default function Portfolio() {
               <CardFooter className='flex justify-between items-center'>
                   <Badge variant="outline" className="border-primary/50 text-primary">{item.category}</Badge>
                   <Button variant="ghost" size="sm" asChild className="opacity-0 group-hover:opacity-100 transition-opacity text-primary">
-                    <Link href="#">
+                    <Link href={item.url} target="_blank" rel="noopener noreferrer">
                       View Project <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
