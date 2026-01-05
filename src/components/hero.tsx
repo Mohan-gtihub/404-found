@@ -1,31 +1,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap, Rocket } from 'lucide-react';
+import AnimatedBackground from '@/components/animated-background';
 
 export default function Hero() {
   return (
     <section className="relative w-full h-[90vh] min-h-[700px] flex items-center justify-center text-center bg-background overflow-hidden">
-      {/* Animated 3D background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-primary/30 to-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-blue-500/10 to-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-
-        {/* Floating particles */}
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-primary/40 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${5 + Math.random() * 10}s`,
-            }}
-          ></div>
-        ))}
-      </div>
+      {/* Animated background */}
+      <AnimatedBackground />
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>

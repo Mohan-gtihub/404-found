@@ -81,26 +81,33 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
 @layer utilities {
+
   /* Floating animation for particles */
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0) translateX(0);
       opacity: 0.3;
     }
+
     25% {
       transform: translateY(-20px) translateX(10px);
       opacity: 0.6;
     }
+
     50% {
       transform: translateY(-40px) translateX(-10px);
       opacity: 0.8;
     }
+
     75% {
       transform: translateY(-20px) translateX(5px);
       opacity: 0.6;
@@ -116,6 +123,7 @@
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -131,6 +139,7 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -139,6 +148,96 @@
 
   .animate-fade-in-up {
     animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  /* Slow spin animation */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+
+  /* Very slow spin animation */
+  @keyframes spin-very-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-very-slow {
+    animation: spin-very-slow 40s linear infinite;
+  }
+
+  /* Slide right animation */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-slide-right {
+    animation: slide-right 15s linear infinite;
+  }
+
+  /* Slide left animation */
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-slide-left {
+    animation: slide-left 15s linear infinite;
+  }
+
+  /* Slide down animation */
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  .animate-slide-down {
+    animation: slide-down 20s linear infinite;
+  }
+
+  /* Slide up animation */
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 20s linear infinite;
   }
 
   /* Delay utilities */
