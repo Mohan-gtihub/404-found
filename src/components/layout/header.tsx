@@ -13,6 +13,7 @@ import {
 const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#portfolio', label: 'Our Work' },
+  { href: '#testimonials', label: 'Testimonials' },
   { href: '#why-us', label: 'Why Us' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -23,8 +24,7 @@ export default function Header() {
       <div className="container flex h-16 items-center px-4 md:px-6">
         <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-             <span className="font-sans font-black text-2xl tracking-tighter text-primary">404</span>
-             <span className="font-sans font-semibold text-xl text-foreground/80">found</span>
+            <span className="font-sans font-black text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-500 to-cyan-400">FUTURONTECH</span>
           </Link>
         </div>
 
@@ -51,8 +51,7 @@ export default function Header() {
             <SheetContent side="right">
               <div className="flex flex-col space-y-4 p-6">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
-                    <span className="font-sans font-black text-2xl tracking-tighter text-primary">404</span>
-                    <span className="font-sans font-semibold text-xl text-foreground/80">found</span>
+                  <span className="font-sans font-black text-2xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-500 to-cyan-400">FUTURONTECH</span>
                 </Link>
                 <nav className="flex flex-col space-y-2">
                   {navLinks.map((link) => (

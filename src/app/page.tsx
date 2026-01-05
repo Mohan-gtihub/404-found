@@ -1,9 +1,11 @@
 import Contact from '@/components/contact';
+import ContactDetails from '@/components/contact-details';
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import Hero from '@/components/hero';
 import Portfolio from '@/components/portfolio';
 import Services from '@/components/services';
+import Testimonials from '@/components/testimonials';
 import WhyChooseUs from '@/components/why-choose-us';
 
 export default function Home() {
@@ -14,7 +16,9 @@ export default function Home() {
         <Hero />
         <Services />
         <Portfolio />
+        <Testimonials />
         <WhyChooseUs />
+        <ContactDetails />
         <Contact />
       </main>
       <Footer />

@@ -11,8 +11,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: '404 Found | Web & IoT Solutions',
-  description: 'Innovative web development and smart IoT solutions for modern businesses and homes. We build the future, one line of code at a time.',
+  title: 'FUTURONTECH | Web & IoT Solutions',
+  description: 'Innovative web development and smart IoT solutions for modern businesses and homes. FUTURONTECH builds the future, one line of code at a time.',
 };
 
 export default function RootLayout({
